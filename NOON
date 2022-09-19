@@ -1,0 +1,11 @@
+import requests, time
+
+TheUrl, Creqs = ("https://walnut-celestial-scourge.glitch.me/"), 0
+def OpenUrl(url):
+    try:requests.get(url)
+    except:OpenUrl(url)
+while True:
+    OpenUrl(str(TheUrl))
+    Creqs += 1
+    print('Sent ['+str(Creqs)+']')
+    time.sleep(900)
